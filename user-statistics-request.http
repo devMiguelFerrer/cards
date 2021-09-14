@@ -1,0 +1,46 @@
+# Test Request
+GET http://localhost:9324/user-statistics HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST http://localhost:9324/user-statistics HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 111,
+    "ownerId": 2,
+    "cardId": 1,
+    "cardName": "Netherlands",
+    "cardImage": "Massachusetts",
+    "cardRarity": "normal",
+    "cardUses": 0,
+    "cardsObtained": 1,
+    "userId": 12    
+}
+
+###
+
+PUT http://localhost:9324/user-statistics HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 111,
+    "ownerId": 2,
+    "cardId": 1,
+    "cardName": "UPDATED Netherlands",
+    "cardImage": "Massachusetts",
+    "cardRarity": "normal",
+    "cardUses": 0,
+    "cardsObtained": 1,
+    "userId": 12   
+}
+
+###
+
+DELETE http://localhost:9324/user-statistics?id=111 HTTP/1.1
+Content-Type: application/json
+
+{
+
+}

@@ -1,0 +1,48 @@
+# Test Request
+GET http://localhost:9322/card HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST http://localhost:9322/card HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 440,
+    "name": "CARD_1239",
+    "image": "http://image.jpg",
+    "rarity": "normal",
+    "ownerId": 3,
+    "published": false,
+    "type": "limited"
+}
+
+###
+
+PUT http://localhost:9322/card HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 440,
+    "name": "UPDATED_CARD_1239",
+    "image": "http://image.jpg",
+    "rarity": "normal",
+    "ownerId": 3,
+    "published": false,
+    "type": "limited"
+}
+
+###
+
+DELETE http://localhost:9322/card?id=440 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 440,
+    "name": "UPDATED_CARD_1239",
+    "image": "http://image.jpg",
+    "rarity": "normal",
+    "ownerId": 3,
+    "published": false,
+    "type": "limited"
+}
