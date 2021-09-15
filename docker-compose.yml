@@ -25,8 +25,8 @@ services:
       retries: 10
 
   user:
-    build: ./user-server/.
-    container_name: stream-user-server
+    build: ./user-service/.
+    container_name: stream-user-service
     ports: 
       - 9321:9321
     env_file:
@@ -38,8 +38,8 @@ services:
       - stream_network
 
   card:
-    build: ./card-server/.
-    container_name: stream-card-server
+    build: ./card-service/.
+    container_name: stream-card-service
     ports: 
       - 9322:9322
     env_file:
@@ -51,8 +51,8 @@ services:
       - stream_network
 
   owner-statistics:
-    build: ./owner-statistics-server/.
-    container_name: stream-owner-statistics-server
+    build: ./owner-statistics-service/.
+    container_name: stream-owner-statistics-service
     ports: 
       - 9323:9323
     env_file:
@@ -64,8 +64,8 @@ services:
       - stream_network
 
   user-statistics:
-    build: ./user-statistics-server/.
-    container_name: stream-user-statistics-server
+    build: ./user-statistics-service/.
+    container_name: stream-user-statistics-service
     ports: 
       - 9324:9324
     env_file:

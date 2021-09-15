@@ -1,0 +1,35 @@
+CREATE TABLE `SL_USER_STATICS` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ownerId` int(11) NOT NULL,
+  `cardId` int(11) NOT NULL,
+  `cardName` varchar(255) NOT NULL,
+  `cardImage` varchar(255) NOT NULL,
+  `cardRarity` varchar(255) NOT NULL,
+  `cardUses` int(11) NOT NULL,
+  `cardsObtained` int(11) NOT NULL,
+  `userId` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `SL_USER_STATICS` (`id`,`cardName`,`cardRarity`,`cardImage`,`ownerId`,`cardUses`,`cardId`,`cardsObtained`,`userId`) VALUES 
+(1,"Netherlands","normal","Massachusetts",2,6,1,1,9),
+(2,"Switzerland","normal","PV",6,14,2,5,10),
+(3,"Congo, the Democratic Republic of the","normal","Antioquia",8,14,3,4,11),
+(4,"Ukraine","epic","Western Australia",1,14,4,3,12),
+(5,"United Kingdom (Great Britain)","normal","JI",2,14,5,10,11),
+(6,"Tanzania","normal","NE",6,6,6,2,11),
+(7,"Djibouti","normal","Lagos",2,14,7,7,10),
+(8,"Antigua and Barbuda","normal","Minas Gerais",1,14,8,5,9),
+(9,"Korea, North","legendary","La Libertad",7,6,9,4,10),
+(10,"Burundi","normal","NO",3,6,10,5,10),
+(11,"Togo","normal","Kent",6,6,11,1,11),
+(12,"Myanmar","epic","WI",6,14,12,7,11),
+(13,"Moldova","normal","SI",8,14,13,11,11),
+(14,"Mauritania","legendary","SI",3,6,14,3,12),
+(15,"Aruba","normal","Sląskie",6,6,15,9,12),
+(16,"Albania","epic","O",2,6,16,1,10),
+(17,"Fiji","normal","MI",8,14,17,4,11),
+(18,"Pitcairn Islands","legendary","Istanbul",1,14,18,7,9),
+(19,"Tokelau","epic","C",3,6,19,2,10),
+(20,"Hungary","legendary","Jalisco",7,14,20,5,11),
+(21,"Niue","epic","UP",2,14,21,3,12);
