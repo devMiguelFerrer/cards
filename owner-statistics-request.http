@@ -8,10 +8,13 @@ POST http://localhost:9323/owner-statistics HTTP/1.1
 Content-Type: application/json
 
 {
-    "id": 444,
-    "name": "TEST_1239",
-    "age": 33,
-    "pass": "0000"
+    "id": 654,
+    "ownerId": 654,
+    "cardId": 654,
+    "cardName": "OWNER TEST",
+    "cardImage": "OWNER IMAGE",
+    "cardRarity": "OWNER RARITY",
+    "cardUses": 25
 }
 
 ###
@@ -20,19 +23,26 @@ PUT http://localhost:9323/owner-statistics HTTP/1.1
 Content-Type: application/json
 
 {
-    "id": 444,
-    "name": "UPDATE_TEST_1239",
-    "age": 33,
-    "pass": "0000"
+    "id": 654,
+    "ownerId": 654,
+    "cardId": 654,
+    "cardName": "UPDATED OWNER TEST",
+    "cardImage": "OWNER IMAGE",
+    "cardRarity": "OWNER RARITY",
+    "cardUses": 35
 }
 
 ###
 
-DELETE http://localhost:9323/owner-statistics?id=444 HTTP/1.1
+DELETE http://localhost:9323/owner-statistics?id=654 HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "TEST_1239",
-    "age": 33,
-    "pass": "0000"
+    "id": 654,
+    "ownerId": 654,
+    "cardId": 654,
+    "cardName": "UPDATED OWNER TEST",
+    "cardImage": "OWNER IMAGE",
+    "cardRarity": "OWNER RARITY",
+    "cardUses": 35
 }
